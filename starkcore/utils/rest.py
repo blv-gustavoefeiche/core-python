@@ -48,6 +48,7 @@ def get_stream(sdk_version, host, api_version, user, resource, language, timeout
 
 
 def get_id(sdk_version, host, api_version, user, resource, id, language, timeout, **query):
+    print("{endpoint}/{id}".format(endpoint=endpoint(resource), id=id))
     json = fetch(
         host=host,
         sdk_version=sdk_version,
